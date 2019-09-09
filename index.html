@@ -33,6 +33,14 @@
 
 </head>
 
+<script type="text/javascript">
+	document.oncontextmenu=function(e)
+	{
+		e = e || windows.event;
+		if(/^img$/i.test((e.target || e.srcElement).nodeName)) return false;
+		};
+		</script>
+
 <body data-spy="scroll" data-target="#mynav" data-offset="85">
 
 <!-- Preloader --> 
